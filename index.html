@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    
+    <header class="container">
+        <nav>
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pages</a></li>
+                 <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Search</a></li>
+                   <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <section class="main-content container">
+        <div class="booking-form" id="booking-and-confirmation">
+
+            <!-- Booking input Form -->
+            <div id="booking-input">
+                <h3>FLIGHTS BOOKING</h3>
+                <div class="input-group">
+                    <label for="flying-from">FLYING FROM:</label>
+                    <input class="inp-style" id="flying-from" type="text" name="" placeholder="Dhaka, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="flying-to">FLYING TO:</label>
+                    <input class="inp-style" id="flying-to" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="departure-date"S>DEPARTURE:</label>
+                            <input class="inp-style" id="departure-date" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="return-date">RETURNS:</label>
+                        <input class="inp-style" id="return-date" type="date" name="">
+                    </div>
+                </div>
+
+                <label for="first-class-ticket-number">FIRST-CLASS($150)</label>
+                <div class="input-group first-class">
+                    <div class="plus-minus-btn">
+                        <span id="first-class-minus" class="control">-</span>
+                    </div>
+                    <div>
+                        <input class="inp-style inp-width" type="text" name="" id="first-class-ticket-number" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <span id="first-class-plus" class="control">+</span>
+                    </div>
+                </div>
+
+                <label for="economy-class-ticket-number">ECONOMY ($100)</label>
+                <div class="input-group economy-class">
+                    <div class="plus-minus-btn">
+                        <span id="economy-class-minus" class="control">-</span>
+                    </div>
+                    <div>
+                        <input class="inp-style inp-width" type="text" name="" id="economy-class-ticket-number" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <span id="economy-class-plus" class="control">+</span>
+                    </div>
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>SUBTOTAL</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-subtotal">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-vat">0</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>TOTAL</h4>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="price-total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-style" id="book-now-button">BOOK NOW</button>
+                <P class="hb">Happy Journey Hope You Make Millions Of Amazing Memories.</P>
+            </div>
+
+            <!-- booking confirmation form -->
+            <div id="booking-confirmation">
+                <h2><U>BOOKING CONFIRMATION FORM</U></h2><br>
+
+                <p>Thanks for booking with <strong><U>BHARAT AIRLINES</U></strong>. Here is your booking information</p><br>
+
+                <label for="confirmation-flying-from">FLYING FROM:</label>
+                <input type="text" id="confirmation-flying-from" placeholder="Dhaka, Bangladesh">
+
+                <label for="confirmation-flying-to">FLYING TO:</label>
+                <input type="text" id="confirmation-flying-to" placeholder="New York, United States">
+
+                <label for="confirmation-departure">DEPARTURE DATE:</label>
+                <input type="text" id="confirmation-departure" placeholder="31 January 2021">
+
+                <label for="confirmation-return">Return date:</label>
+                <input type="text" id="confirmation-return" placeholder="32 January 2021">
+
+                <label for="confirmation-price-total">TOTAL TICKET COST($)</label>
+                <input type="number" id="confirmation-price-total" placeholder=0>
+                <p class="hb">Happy Journey Hope You Make Millions Of Amazing Memories.</p>
+
+                <button id="print-button" onclick="window.print()">PRINT THE INFORMATION</button>
+
+            </div>
+        </div>
+
+        <div class="booking-content">
+            <h1 class="BHARAT">BHARAT AIRLINES</h1>
+            <h1 class="INDIA">DISCOVER <br>AROUND THE WORLD</h1>
+            <p>
+                Customer Support, Payment Security, Privacy Policy, User Agreement, Terms of Service, More Offices, Make A Payment, Work From Home.</p>
+        </div>
+    </section>
+
+<!-- contact section -->
+
+    <section class="contact" id="contact">
+	<div class="contact-text">
+		<h1><div class="A">Contact <span>Me!</div></span></h1>
+		<h4>If you Have any query you can message/mail.</h4>
+<h4><B><U>BHARATAIRLINES@GMAIL.COM</U></B></h4>
+		
+		<div class="list">
+			<li><a href="#"><B><U>9752372666</U></B></a></li>
+			<li><a href="#"><B><U>shivamkahar335@gmail.com</U></B></a></li>
+			<li><a href="#"><B><U>Like Share & Subscribe</U></B></a></li>
+		</div>
+
+		<div class="contact-icons">
+			<a href="#"><i class='bx bxl-facebook'></i></a>
+			<a href="#"><i class='bx bxl-twitter' ></i></a>
+			<a href="https://www.instagram.com/shivam___kahar/"><i class='bx bxl-instagram-alt' ></i></a>
+			<a href="#"><i class='bx bxl-youtube' ></i></a>
+		</div>
+        <img src="images/B7.JPG" height="200px" width="800px">
+
+	</div>
+	<div class="contact-form">
+		<form action="">
+			<input type="name" placeholder="Your Name " required>
+			<input type="email" placeholder="Your Email " required>
+			<input type="number" placeholder="your Mobile Number" required>
+			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+			<input type="submit" value="Send Message" class="submit" required>
+		</form>
+
+	</div>
+</section>
+
+    
+
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+
+    <!--Thank You-->
+   
+    
+
+    <!-- footer section start -->
+    <footer>
+        <img src="images/B8.JPG" height="40PX" width="90PX"><span>                          Created By <a href="https://www.instagram.com/shivam___kahar/">SHIVAM___KAHAR</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span><img src="images/B.LOGO.jpg" height="40PX" width="90PX">
+    </footer>
+
+
+
+        
+
+
+</body>
+
+</html>
